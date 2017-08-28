@@ -18,7 +18,8 @@ export default class App extends React.Component {
           flex: 1,
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "#F5FCFF"
+          backgroundColor: "#F5FCFF",
+          marginTop: 20
         }}
       >
         <WebView
@@ -28,7 +29,7 @@ export default class App extends React.Component {
           domStorageEnabled={true}
           decelerationRate="normal"
           startInLoadingState={true}
-          userAgent={"connectedvessel"}
+          userAgent={"ccta"}
           onLoadEnd={() => {
             this.setState({ finishedLoading: true });
           }}
